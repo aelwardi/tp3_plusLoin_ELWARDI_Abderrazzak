@@ -14,9 +14,12 @@ import java.util.List;
 public class Bean1 {
 
     private int nombre;
-
+    
+    public String actionString(String base, String numEx, String query){
+        return base+numEx+query;
+    }
     public String afficher() {
-        return "affichage__4?nb=" + nombre + "&amp;faces-redirect=true";
+        return "affichage__4?numEx=" + nombre + "&amp;faces-redirect=true";
     }
 
     public int getNombre() {

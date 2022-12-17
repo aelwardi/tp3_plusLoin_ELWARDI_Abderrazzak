@@ -14,7 +14,8 @@ import java.util.List;
 public class Bean {
 
     private int nombre;
-
+    
+    
     public String afficher() {
         return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
     }
