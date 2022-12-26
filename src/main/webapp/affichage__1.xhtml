@@ -9,11 +9,11 @@
 
     <ui:define name="content">
         Les nombres : <br/>
-        <ui:repeat value="#{bean1.nombresSuivants}" var="n">
+        <ui:repeat value="#{bean.nombresSuivants}" var="n">
             #{n + 1},
         </ui:repeat>
         <p/>
-        <h:link value="Saisir un autre nombre" outcome="#{bean1.actionString('formulaire__1', numEx, query)}"/>
+        <h:link value="Saisir un autre nombre" outcome="formulaire__1"/>
     </ui:define>
 
 </ui:composition>
